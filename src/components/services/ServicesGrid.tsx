@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "@/lib/asset-path";
 import type { ServiceItem } from "@/lib/types";
 
 export default function ServicesGrid({ services }: { services: ServiceItem[] }) {
@@ -32,7 +33,7 @@ export default function ServicesGrid({ services }: { services: ServiceItem[] }) 
             <div className="service-image">
               {service.image && (
                 <Image
-                  src={service.image.path}
+                  src={assetPath(service.image.path)}
                   alt={service.image.alt}
                   width={500}
                   height={400}

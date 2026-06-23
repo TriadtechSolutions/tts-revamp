@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "@/lib/asset-path";
 import { getSiteData } from "@/lib/content";
 
 export default function Footer() {
@@ -13,7 +14,7 @@ export default function Footer() {
             <a href={settings.logoLink} target="_blank" rel="noopener noreferrer">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={settings.footerLogo}
+                src={assetPath(settings.footerLogo)}
                 alt="TriadTech Solutions"
                 className="footer-logo"
                 width={240}
@@ -24,7 +25,7 @@ export default function Footer() {
             <div className="socialmedia_icons">
               <a href={settings.instagramLink} target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/images/images/instagram.svg"
+                  src={assetPath("/images/images/instagram.svg")}
                   alt="Instagram"
                   className="instagram-logo"
                   width={35}
@@ -33,7 +34,7 @@ export default function Footer() {
               </a>
               <a href={settings.facebookLink} target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/images/images/facebook.svg"
+                  src={assetPath("/images/images/facebook.svg")}
                   alt="Facebook"
                   className="facebook-logo"
                   width={35}
@@ -41,7 +42,7 @@ export default function Footer() {
                 />
               </a>
               <a href="https://x.com/TriadtechS63725" target="_blank" rel="noopener noreferrer">
-                <Image src="/images/x.svg" alt="X" className="x-logo" width={35} height={35} />
+                <Image src={assetPath("/images/x.svg")} alt="X" className="x-logo" width={35} height={35} />
               </a>
             </div>
           </div>

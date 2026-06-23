@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/asset-path";
 import type { Section } from "@/lib/types";
 
 const DEFAULT_FEATURES = [
@@ -13,7 +14,7 @@ export default function PackagesSection({ section }: { section: Section }) {
       {section.bgImage && (
         <div className="package-bg-image-wrapper">
           <Image
-            src={section.bgImage.path}
+            src={assetPath(section.bgImage.path)}
             alt={section.bgImage.alt}
             className="package-bg-image"
             fill

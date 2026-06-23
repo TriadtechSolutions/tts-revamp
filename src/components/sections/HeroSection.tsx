@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { assetPath } from "@/lib/asset-path";
 import type { Section } from "@/lib/types";
 import { normalizeUrl } from "@/lib/content";
 
@@ -8,7 +9,7 @@ export default function HeroSection({ section }: { section: Section }) {
       {section.bgImage && (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={section.bgImage.path}
+          src={assetPath(section.bgImage.path)}
           alt={section.bgImage.alt}
           className="home-bg"
         />

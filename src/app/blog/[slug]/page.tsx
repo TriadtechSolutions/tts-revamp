@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BlogPostEditorial from "@/components/blog/BlogPostEditorial";
+import { assetPath } from "@/lib/asset-path";
 import {
   getAllPostSlugs,
   getPostBySlug,
@@ -56,7 +57,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </div>
       {post.image && (
         <div className="blog-post-standard__image">
-          <img src={post.image.path} alt={post.image.alt} />
+          <img src={assetPath(post.image.path)} alt={post.image.alt} />
         </div>
       )}
       <div

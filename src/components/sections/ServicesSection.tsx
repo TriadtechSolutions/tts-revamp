@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { assetPath } from "@/lib/asset-path";
 import type { Section } from "@/lib/types";
 import { getServiceExcerpt, getSiteData, normalizeUrl } from "@/lib/content";
 import OrbMount from "@/components/orb/OrbMount";
@@ -29,7 +30,7 @@ export default function ServicesSection({ section }: { section: Section }) {
         <div className="service-bg-image-wrapper">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={section.bgImage.path}
+            src={assetPath(section.bgImage.path)}
             alt={section.bgImage.alt}
             className="bg-image"
           />

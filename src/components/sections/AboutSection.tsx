@@ -1,3 +1,4 @@
+import { assetPath } from "@/lib/asset-path";
 import type { Section } from "@/lib/types";
 
 export default function AboutSection({ section }: { section: Section }) {
@@ -17,7 +18,7 @@ export default function AboutSection({ section }: { section: Section }) {
               <div className="about-front-image-wrapper">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={section.image.path}
+                  src={assetPath(section.image.path)}
                   alt={section.image.alt}
                   className="about-front-image"
                 />

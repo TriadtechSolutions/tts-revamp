@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "@/lib/asset-path";
 import type { Page } from "@/lib/types";
 import ContactForm from "@/components/forms/ContactForm";
 import {
@@ -74,7 +75,7 @@ function ServiceFeatureGrid({
       <div className="service-feature-grid service-feature-grid--showcase">
         <div className="service-feature-media">
           <Image
-            src={image.path}
+            src={assetPath(image.path)}
             alt={image.alt}
             width={640}
             height={480}
@@ -116,7 +117,7 @@ function ServiceFeatureGrid({
       {image && (
         <div className="service-feature-media service-feature-media--fallback">
           <Image
-            src={image.path}
+            src={assetPath(image.path)}
             alt={image.alt}
             width={640}
             height={480}
@@ -176,7 +177,7 @@ export function ServiceDetail({ page }: { page: Page }) {
             {page.detailed_banner_image && (
               <div className="service-hero-visual">
                 <Image
-                  src={page.detailed_banner_image.path}
+                  src={assetPath(page.detailed_banner_image.path)}
                   alt={page.detailed_banner_image.alt}
                   width={560}
                   height={420}

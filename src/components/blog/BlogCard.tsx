@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { assetPath } from "@/lib/asset-path";
 import type { BlogPost } from "@/lib/types";
 
 interface BlogCardProps {
@@ -9,7 +10,7 @@ export default function BlogCard({ post }: BlogCardProps) {
   return (
     <article className="blog-card">
       <div className="blog-image-wrapper">
-        <img src={post.image.path} alt={post.image.alt} />
+        <img src={assetPath(post.image.path)} alt={post.image.alt} />
         <Link href={`/blog/category/${post.categorySlug}`} className="blog-tag">
           {post.category}
         </Link>

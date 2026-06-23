@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/asset-path";
+
 const LEADERS = [
   {
     image: {
@@ -28,7 +30,7 @@ export default function LeadershipSection() {
       <div className="leader-bg-image-wrapper">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/2025-09/leadership page.png"
+          src={assetPath("/images/2025-09/leadership page.png")}
           alt="Leadership background"
           className="leader-bg-image"
         />
@@ -42,7 +44,7 @@ export default function LeadershipSection() {
             <div key={leader.image.path} className="leader-card">
               <div className="leader-image-wrapper">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={leader.image.path} alt={leader.image.alt} />
+                <img src={assetPath(leader.image.path)} alt={leader.image.alt} />
               </div>
               <div
                 className="leader-content"

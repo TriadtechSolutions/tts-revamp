@@ -2,7 +2,10 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { assetPath } from "@/lib/asset-path";
 import MainNav from "./MainNav";
+
+const LOGO = assetPath("/images/tts-logo.png");
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,8 +23,8 @@ export default function Header() {
         <Link href="/" className="navbar-brand" onClick={closeMenu}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/tts-logo.png"
-            srcSet="/images/tts-logo.png 1x, /images/tts-logo.png 2x"
+            src={LOGO}
+            srcSet={`${LOGO} 1x, ${LOGO} 2x`}
             alt="Triadtech Solutions"
             className="site-logo"
             width={260}

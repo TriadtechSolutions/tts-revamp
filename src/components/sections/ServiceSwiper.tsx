@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { assetPath } from "@/lib/asset-path";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -28,7 +29,7 @@ export default function ServiceSwiper({
     <div className="service-card">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={service.icon}
+        src={assetPath(service.icon)}
         alt={service.title}
         height={60}
         width={60}
