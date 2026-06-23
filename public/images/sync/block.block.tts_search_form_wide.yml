@@ -1,0 +1,23 @@
+uuid: b76ca18b-6b71-4229-adbc-3a051f373cf3
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - tts
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: tts_search_form_wide
+theme: tts
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

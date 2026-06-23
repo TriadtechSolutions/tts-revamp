@@ -1,0 +1,23 @@
+uuid: 3aedc7fc-c66c-4254-885e-9ee2a1a888e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - tts
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: tts_search_form_narrow
+theme: tts
+region: primary_menu
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

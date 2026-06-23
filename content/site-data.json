@@ -1,0 +1,588 @@
+{
+  "pages": {
+    "home": {
+      "id": "1",
+      "slug": "home",
+      "title": "Home Page",
+      "type": "landing_page",
+      "url": "/",
+      "sections": [
+        {
+          "id": "1",
+          "type": "homebanner",
+          "title": "We Buckled Up to Build. Design. Market.",
+          "button": "internal:/services-grid",
+          "bgImage": {
+            "path": "/images/2025-09/Home section final.webp",
+            "alt": "Home banner"
+          }
+        },
+        {
+          "id": "2",
+          "type": "about",
+          "title": "ABOUT US",
+          "body": "<p><strong>At Triadtech Solutions&nbsp;</strong><br><strong>We don\u2019t just follow trends, we create what\u2019s Next. we are redefining the digital landscape with a clear vision - to empower businesses through technology, creativity, and innovation. Our brand is built to deliver end-to-end digital solutions that drive meaningful growth. Our mission is simple: to bridge the gap between complex technology and real business results.</strong></p><ul><li><strong>Customer-centric approach in everything we do</strong></li><li><strong>Cutting-edge technology solutions</strong></li></ul>",
+          "bgImage": {
+            "path": "/images/2026-01/abt us bg.webp",
+            "alt": "About us BG"
+          },
+          "image": {
+            "path": "/images/2026-01/about us img webp.webp",
+            "alt": "About front img"
+          }
+        },
+        {
+          "id": "3",
+          "type": "service",
+          "title": "what we do",
+          "body": "<p>We utilize a powerful blend of technologies to deliver robust, scalable, and high-performing digital solutions.</p>",
+          "button": "internal:/services-grid",
+          "bgImage": {
+            "path": "/images/2025-08/What we do Section.png",
+            "alt": "Services bg"
+          }
+        },
+        {
+          "id": "5",
+          "type": "testimonials",
+          "title": "TESTIMONIALS",
+          "subtitle": "Our client says",
+          "testimonials": [
+            {
+              "body": "<p>\u201c I\u2019m extremely happy with the website developed by Triadtech Solutions for our salon. The appointment booking system works flawlessly and has made it so much easier for our customers to schedule their visits. The design is clean, professional, and perfectly reflects our brand. Thank you to the entire team at Triad Tech Solutions for bringing our vision to life ! \\\"</p><div class=\\\"testimonial-author\\\">-Guru</div><div class=\\\"author-company\\\">GR Pride Family Salon</div>"
+            },
+            {
+              "body": "<p>\u201c Partnering with Triadtech Solutions for our digital branding has been a great decision. Their creative approach and online platforms have helped boost our brand visibility significantly. The team truly understands our business and delivers results that speak for themselves. \u201d</p><div class=\\\"testimonial-author\\\">-Prabhu</div><div class=\\\"author-company\\\">Sree Mahendraa Cars</div>"
+            }
+          ]
+        }
+      ]
+    },
+    "web-design": {
+      "id": "2",
+      "slug": "web-design",
+      "title": "Web Design",
+      "type": "services",
+      "url": "/web-design",
+      "sections": [],
+      "body": "<p>Our web design services focus on creating visually appealing, user-centric websites that not only look great but also provide exceptional user experiences. We combine creativity with functionality to deliver designs that convert visitors into customers.</p><p><br><strong>Key Capabilities</strong></p><ul><li>UI/UX Design:Intuitive user interfaces with seamless user experience flows</li><li>Responsive Design:Mobile-first approach ensuring perfect display across all devices</li><li>Prototyping:Interactive prototypes to visualize and test design concepts</li></ul>",
+      "detailed_title": "Web Design",
+      "detailed_button": {
+        "title": "Let's Design Together",
+        "url": "/get-a-quote"
+      },
+      "detailed_banner_text": "<p>We believe great design is more than just visuals \u2014 it\u2019s about creating experiences that connect, inspire, and engage.</p>",
+      "detailed_description1": "<p><strong>\ud83c\udfa8 Graphic Design</strong><br>Our creative team brings ideas to life with stunning visuals - whether it\u2019s digital or print, we make designs that communicate your brand story effectively.</p><p><strong>\ud83d\udd16 Logo Creation &amp; Animation</strong><br>Your logo is the face of your brand. We design unique, memorable logos that reflect your identity - and bring them to life with modern logo animations for digital platforms.</p>",
+      "detailed_description2": "<p><strong>\ud83d\uddbc\ufe0f UI/UX Design</strong><br>We design user-friendly, intuitive interfaces that enhance customer experience and keep them engaged. Our goal is simple: to make your website not just look beautiful, but also work seamlessly.</p><p><strong>\ud83c\udfa8 Poster Design</strong><br>From online campaigns to offline promotions, we craft posters that grab attention and deliver your message with impact.</p><p><strong>\ud83d\udcc4 Flyers &amp; Brochures</strong><br>Professional flyers and brochures that present your products, services, and values in a clear and engaging format, perfect for both digital sharing and print.</p>",
+      "detailed_choose_us": "<p><strong>\ud83d\ude80 Why Choose Us?</strong>&nbsp;<br>&nbsp;</p><ul><li>Creative + Strategic Approach \u2192 We don\u2019t just design; we design with purpose.<br>&nbsp;</li><li>Brand-Focused \u2192 Every element reflects your unique identity.<br>&nbsp;</li><li>End-to-End Solutions \u2192 From concept to execution, we\u2019ve got you covered.</li></ul><p>&nbsp;</p>",
+      "detailed_banner_image": {
+        "path": "/images/2025-08/Web design Service page.webp",
+        "alt": "web design banner img"
+      },
+      "detailed_front_image": {
+        "path": "/images/2025-08/Web design minimized.png",
+        "alt": "web design front img"
+      },
+      "image2": {
+        "path": "/images/2025-09/Subtract.png",
+        "alt": "Web design"
+      }
+    },
+    "web-development": {
+      "id": "3",
+      "slug": "web-development",
+      "title": "Web Development",
+      "type": "services",
+      "url": "/web-development",
+      "sections": [],
+      "body": "<p>Our development team creates high-performance, secure, and scalable web applications. From simple websites to complex enterprise solutions, we use the latest technologies and best practices to deliver exceptional results.</p><p><br><strong>Key Capabilities:</strong></p><ul><li>Frontend Development:Modern JavaScript frameworks for dynamic user interfaces</li><li>Backend Development:Robust server-side solutions and API development</li><li>Database Design:Efficient database architecture and optimization</li><li>API Integration:Seamless third-party service integrations</li></ul>",
+      "detailed_title": "Web Development",
+      "detailed_button": {
+        "title": "Let's Build Together",
+        "url": "/get-a-quote"
+      },
+      "detailed_banner_text": "<p>We create scalable, user-friendly websites and web apps that power your business with technology built to last.</p>",
+      "detailed_description1": "<p><strong>Website Development</strong><br>We builds scalable and secure applications using modern technologies like PHP, Python, Node.js, MySQL, and more, tailored to meet your business needs. From intuitive product catalogs to seamless payment gateways, we design and develop e-commerce platforms that boost sales and deliver smooth customer journeys.</p><p><strong>Responsive &amp; Mobile-Friendly Design</strong><br>Every project we create is optimized for all devices \u2014 ensuring your website looks and performs perfectly on desktop, tablet, and mobile.Our designs adapt seamlessly to different screen sizes without compromising quality.</p>",
+      "detailed_description2": "<p>We build tailored websites that are fast, secure, and aligned with your brand goals. Whether it\u2019s a corporate site, portfolio, or product showcase, we ensure it stands out.</p><p><strong>CMS Development</strong><br>Easily manage and update your content with a flexible content management system, customized to your workflow.Our CMS solutions are scalable and secure, giving you full control without technical complexity.With a user-friendly interface, your team can publish, edit, and organize content effortlessly.</p><p><strong>API Integration &amp; Backend Development</strong><br>We ensure smooth functionality and connectivity by integrating APIs, databases, and third-party tools into your system.Our backend solutions are designed for speed, reliability, and seamless communication between services.From payment gateways to advanced analytics, we make integrations hassle-free and future-ready.</p>",
+      "detailed_choose_us": "<p><strong>\ud83d\ude80 Why Choose Us?</strong>&nbsp;<br>&nbsp;</p><ul><li>End-to-End Development \u2013 From planning to deployment.<br>&nbsp;</li><li>Cutting-Edge Technologies \u2013 PHP, Python, MySQL, Bootstrap, jQuery, and more.<br>&nbsp;</li><li>Secure &amp; Scalable - Built for performance and long-term growth.<br>&nbsp;</li><li>Client-Centric \u2013 We deliver projects that match your business goals.</li></ul><p>&nbsp;</p>",
+      "detailed_banner_image": {
+        "path": "/images/2025-08/Web Development serivce page.webp",
+        "alt": "web dev banner img"
+      },
+      "detailed_front_image": {
+        "path": "/images/2025-08/Web dev minimized.png",
+        "alt": "web dev front img"
+      },
+      "image2": {
+        "path": "/images/2025-09/Web Development.png",
+        "alt": "Web Development"
+      }
+    },
+    "digital-marketing": {
+      "id": "4",
+      "slug": "digital-marketing",
+      "title": "Digital Marketing",
+      "type": "services",
+      "url": "/digital-marketing",
+      "sections": [],
+      "body": "<p>Our digital marketing services help businesses establish a strong online presence, reach their target audience effectively, and drive measurable results. We create data-driven strategies that deliver real ROI.</p><p><br><strong>Key Capabilities:</strong></p><ul><li>SEO Optimization:Improve search engine rankings and organic traffic</li><li>Social Media Marketing:Engaging content and community management</li><li>Content Strategy:Compelling content that converts and engages</li><li>Analytics &amp; Reporting:Detailed performance tracking and insights</li></ul>",
+      "detailed_title": "Digital Marketing",
+      "detailed_button": {
+        "title": "Let's Grow Together",
+        "url": "/get-a-quote"
+      },
+      "detailed_banner_text": "<p>Our digital marketing strategies are designed to attract, engage, and convert your audience \u2014 turning clicks into customers and brand presence into profit</p>",
+      "detailed_description1": "<p><strong>Search Engine Optimization (SEO)</strong><br>Boost your visibility and ranking with our data-driven SEO strategies, ensuring your website reaches the right audience at the right time.</p><p><strong>Email Marketing</strong><br>Connect directly with your audience through personalized campaigns that nurture leads and increase customer loyalty. Pay-Per-Click Advertising (PPC) Maximize ROI with targeted ads on Google, Meta, and more \u2014 ensuring every ad spend works for your growth.</p>",
+      "detailed_description2": "<p>we help businesses thrive in the digital space with data-driven strategies and creative execution. Our goal is simple: to boost visibility, drive traffic, and maximize ROI.</p><p><strong>Social Media Marketing (SMM)</strong><br>we create engaging campaigns that build communities, drive interactions, and strengthen your brand\u2019s digital voice.</p><p><strong>Google Ads (Search, Display, Shopping, Video)</strong><br>Run smart campaigns across Google platforms to capture intent-driven audiences and boost conversions.</p><p><strong>Meta Ads (Facebook &amp; Instagram)</strong><br>Engage the right people with visually striking ads that drive awareness, clicks, and sales.</p>",
+      "detailed_choose_us": "<p><strong>\ud83d\ude80 Why Choose Us?</strong>&nbsp;<br>&nbsp;</p><ul><li>Full-Funnel Digital Marketing \u2013 Covering awareness to conversion.<br>&nbsp;</li><li>Creative + Data-Driven \u2013 Perfect balance of ideas and insights.<br>&nbsp;</li><li>Platform Expertise \u2013 Google, Meta, LinkedIn, WhatsApp API &amp; more.<br>&nbsp;</li><li>Client-Centric \u2013 We deliver projects that match your business goals.</li></ul><p>&nbsp;</p>",
+      "detailed_banner_image": {
+        "path": "/images/2025-08/Digital Marketing service page.webp",
+        "alt": "Digital marketing banner img"
+      },
+      "detailed_front_image": {
+        "path": "/images/2025-08/Digital marketing minimized.png",
+        "alt": "Digital Marketing front img"
+      },
+      "image2": {
+        "path": "/images/2025-09/Digital Marketing.png",
+        "alt": "Digital Marketing Service"
+      }
+    },
+    "digital-branding": {
+      "id": "5",
+      "slug": "digital-branding",
+      "title": "Digital Branding",
+      "type": "services",
+      "url": "/digital-branding",
+      "sections": [],
+      "body": "<p>We help businesses create powerful brand identities that stand out in the digital marketplace. Our branding services encompass everything from logo design to comprehensive brand guidelines.</p><p><strong>Key Capabilities:</strong></p><ul><li>Logo Design:Memorable and versatile logo concepts</li><li>Brand Guidelines:Comprehensive style guides and usage rules</li><li>Visual Identity:Consistent visual elements across all touchpoints</li><li>Brand Strategy:Strategic positioning and messaging frameworks</li></ul>",
+      "detailed_title": "Digital Branding",
+      "detailed_button": {
+        "title": "Let's Brand Together",
+        "url": "/get-a-quote"
+      },
+      "detailed_banner_text": "<p>Your brand is more than just a logo \u2014 it\u2019s the voice, emotion, and identity that connects you with your customers</p>",
+      "detailed_description1": "<p><strong>Brand Identity &amp; Design \ud83d\udd8c\ufe0f</strong><br>We create impactful brand identities and designs that reflect your vision and resonate with your audience. Our designs ensure consistency, recognition, and a lasting impression across all platforms.</p><p><strong>Digital Strategy \ud83d\ude80</strong><br>We develop tailored digital strategies that drive growth and maximize your online presence. Our approach combines innovation, analytics, and technology to achieve measurable business results.</p>",
+      "detailed_description2": "<p>Our digital branding solutions ensure that your business not only stands out but also stays memorable in the competitive digital space</p><p><strong>Content Strategy \ud83d\udd8c\ufe0f</strong><br>We craft data-driven content strategies that connect with your audience and align with your business goals. Our approach ensures your brand voice stays consistent while delivering measurable impact.</p><p><strong>Personal Branding \ud83d\ude80</strong><br>We help you build a strong personal brand that showcases your expertise and sets you apart in your industry. Our strategies highlight your unique strengths to create lasting influence and trust.</p>",
+      "detailed_choose_us": "<p><strong>\ud83d\ude80 Why Choose Us?</strong>&nbsp;<br>&nbsp;</p><ul><li>Expert team blending design, strategy, and technology.<br>&nbsp;</li><li>Tailored solutions that reflect your unique vision.<br>&nbsp;</li><li>Proven track record in web development &amp; digital branding.<br>&nbsp;</li><li>Commitment to clarity, creativity, and results.</li></ul><p>&nbsp;</p>",
+      "detailed_banner_image": {
+        "path": "/images/2025-08/Digital Branding service page.webp",
+        "alt": "Digital Branding banner img"
+      },
+      "detailed_front_image": {
+        "path": "/images/2025-08/DG Branding minimized.png",
+        "alt": "Digital Branding front img"
+      },
+      "image2": {
+        "path": "/images/2025-09/Digital Branding.png",
+        "alt": "Digital Branding service"
+      }
+    },
+    "ma-testing": {
+      "id": "6",
+      "slug": "ma-testing",
+      "title": "Automation Testing",
+      "type": "services",
+      "url": "/ma-testing",
+      "sections": [],
+      "body": "<p>Our automation testing services ensure your applications are reliable, secure, and perform optimally. We implement comprehensive testing strategies that catch issues before they reach your users.</p><p><strong>Key Capabilities:</strong></p><ul><li>Unit Testing:Individual component testing for code reliability</li><li>Integration Testing:System integration and API testing</li><li>Performance Testing:Load testing and performance optimization</li></ul>",
+      "detailed_title": "Manual / Automation Testing",
+      "detailed_button": {
+        "title": "Let's Test Together",
+        "url": "/get-a-quote"
+      },
+      "detailed_banner_text": "<p>we design, build, and maintain robust automated suites that speed up releases, reduce human error, and ensure consistent quality across every deployment.</p>",
+      "detailed_description1": "<p><strong>Automation Testing</strong><br>Automation testing speeds up the QA process by running test scripts that simulate user actions and system behavior. It ensures faster releases, higher accuracy, and consistency across multiple environments.<br><strong>Unit Testing</strong> \u2013 Validate individual modules and components for smooth integration.<br><strong>Performance Testing</strong> \u2013 Measure website speed, responsiveness, and stability under real-world load conditions.</p>",
+      "detailed_description2": "<p>Our testing services ensure your web applications run seamlessly across devices and browsers. With a blend of manual and automation testing, we detect bugs, enhance usability, and optimize speed, so your website delivers a flawless experience every time.</p><p><br><strong>Manual Testing</strong><br>Manual testing focuses on real user interaction, ensuring functionality, design, and usability are aligned with customer expectations.<br><strong>Functional Testing</strong> \u2013 Verify every feature and function works as intended.<br><strong>Usability Testing </strong>\u2013 Evaluate user-friendliness, navigation flow, and overall experience.<br><strong>Cross-Browser Testing </strong>\u2013 Ensure compatibility across different browsers and devices.</p>",
+      "detailed_choose_us": "<p><strong>\ud83d\ude80 Why Choose Us?</strong>&nbsp;<br>&nbsp;</p><ul><li>Balanced approach of manual precision + automation speed.<br>&nbsp;</li><li>Early bug detection with reduced time-to-market.<br>&nbsp;</li><li>Enhanced application quality, scalability, and reliability.<br>&nbsp;</li><li>Transparent test reporting and continuous improvements.</li></ul><p>&nbsp;</p>",
+      "detailed_banner_image": {
+        "path": "/images/2025-08/Automation testing service page.webp",
+        "alt": "Testing banner img"
+      },
+      "detailed_front_image": {
+        "path": "/images/2025-08/Automation testing 1.png",
+        "alt": "Testing front img"
+      },
+      "image2": {
+        "path": "/images/2025-09/Automation testing.png",
+        "alt": "Automation testing service"
+      }
+    },
+    "manual-testing": {
+      "id": "7",
+      "slug": "manual-testing",
+      "title": "Manual Testing",
+      "type": "services",
+      "url": "/manual-testing",
+      "sections": [],
+      "body": "<p>Our manual testing services provide comprehensive quality assurance through human expertise and attention to detail. We ensure your applications work perfectly for real users by testing every aspect of functionality, usability, and performance from a human perspective.</p><p><strong>Key Capabilities:</strong></p><ul><li>Functional Testing:Comprehensive testing of all application features and workflows</li><li>Usability Testing:User experience evaluation and interface testing</li><li>Cross-Platform Testing:Testing across different browsers, devices, and operating systems</li><li>Exploratory Testing:Unscripted testing to discover unexpected issues and edge cases</li></ul>",
+      "image2": {
+        "path": "/images/2025-09/manual testing 1.png",
+        "alt": "Manual testing service"
+      }
+    },
+    "iot": {
+      "id": "8",
+      "slug": "iot",
+      "title": "IoT Solutions",
+      "type": "services",
+      "url": "/iot",
+      "sections": [],
+      "body": "<p>Our IoT solutions help businesses harness the power of connected devices to optimize operations, gather valuable insights, and create intelligent automated systems. From sensor networks to smart building management, we design and implement comprehensive IoT ecosystems tailored to your specific needs.</p><p><strong>Key Capabilities:</strong></p><ul><li>Device Connectivity:Seamless integration of sensors, actuators, and smart devices</li><li>Data Analytics:Real-time data processing and predictive analytics from IoT devices</li><li>Cloud Integration:Secure cloud-based IoT platforms with scalable infrastructure</li><li>Automation Systems:Intelligent automation workflows based on sensor data and triggers</li></ul>",
+      "detailed_title": "IoT Solutions",
+      "detailed_button": {
+        "title": "Let's Make Together",
+        "url": "/get-a-quote"
+      },
+      "detailed_banner_text": "<p>We deliver end-to-end IoT solutions that connect devices, data, and people. From concept to deployment, our services ensure smarter systems, improved efficiency, and scalable innovation.</p>",
+      "detailed_description1": "<p><strong>PCB Design \ud83d\udca1</strong><br>Our PCB design services focus on creating compact, high-performance boards optimized for IoT applications, from prototypes to production-ready designs.</p><p><strong>Product Manufacturing \ud83c\udfed</strong><br>From design validation to large-scale production, we provide manufacturing support to transform IoT concepts into market-ready products with precision and efficiency.</p>",
+      "detailed_description2": "<p>We design custom embedded systems that serve as the foundation of IoT devices, ensuring reliability and seamless hardware-software integration.</p><p><strong>IoT Application Development \ud83d\udcf1</strong><br>We develop secure and scalable IoT applications that enable connectivity, real-time monitoring, and actionable insights for smarter decision-making.</p><p><strong>IoT System Consultation \ud83d\udd0d</strong><br>Our experts guide you through strategy, architecture, and deployment, ensuring your IoT ecosystem is built for performance, scalability, and business impact.</p>",
+      "detailed_choose_us": "<p><strong>\ud83d\ude80 Why Choose Us?</strong>&nbsp;<br>&nbsp;</p><ul><li>End-to-end IoT expertise from design to deployment.<br>&nbsp;</li><li>Reliable, secure, and scalable solutions<br>&nbsp;</li><li>Faster time-to-market with optimized processes<br>&nbsp;</li><li>Continuous innovation tailored to your business needs</li></ul><p>&nbsp;</p>",
+      "detailed_banner_image": {
+        "path": "/images/2025-08/Iot service page.webp",
+        "alt": "IOT banner img"
+      },
+      "detailed_front_image": {
+        "path": "/images/2025-08/IoT mini.png",
+        "alt": "IOT front img"
+      },
+      "image2": {
+        "path": "/images/2025-08/iot-solution.png",
+        "alt": "IOT service"
+      }
+    },
+    "3d-architectural-design": {
+      "id": "12",
+      "slug": "3d-architectural-design",
+      "title": "3D Architectural Design",
+      "type": "services",
+      "url": "/3d-architectural-design",
+      "sections": [],
+      "body": "<p>Our 3D architectural design services bring spaces to life before they are built. From residential homes to commercial projects, we create photorealistic visualizations that help clients, architects, and stakeholders see the final result with clarity and confidence.</p><p><strong>Key Capabilities:</strong></p><ul><li>Exterior &amp; Interior Visualization:Realistic 3D renders of buildings and spaces</li><li>Walkthrough Animations:Immersive virtual tours of unbuilt projects</li><li>Floor Plan to 3D Conversion:Transform 2D plans into detailed 3D models</li><li>Material &amp; Lighting Studies:Explore finishes, lighting, and ambiance before construction</li></ul>",
+      "detailed_title": "3D Architectural Design",
+      "detailed_button": {
+        "title": "Let's Visualize Together",
+        "url": "/get-a-quote"
+      },
+      "detailed_banner_text": "<p>We transform architectural concepts into stunning 3D visuals that help you plan, present, and perfect every space before breaking ground.</p>",
+      "detailed_description1": "<p><strong>\ud83c\udfe0 Exterior Visualization</strong><br>Photorealistic 3D renders of building facades, landscapes, and outdoor environments that showcase your project from every angle.</p><p><strong>\ud83d\udecb\ufe0f Interior Design Renders</strong><br>Detailed interior visualizations with accurate materials, furniture, and lighting to help clients experience spaces before they exist.</p>",
+      "detailed_description2": "<p>Our 3D architectural services bridge the gap between concept and construction, giving you powerful visuals for presentations, marketing, and decision-making.</p><p><strong>\ud83c\udfac Walkthrough Animations</strong><br>Immersive video walkthroughs that let viewers explore your project virtually, perfect for client pitches and investor presentations.</p><p><strong>\ud83d\udcd0 Floor Plan to 3D</strong><br>We convert 2D floor plans and CAD drawings into fully detailed 3D models ready for rendering and animation.</p><p><strong>\ud83d\udca1 Lighting &amp; Material Studies</strong><br>Experiment with different materials, color schemes, and lighting setups to find the perfect look for your project.</p>",
+      "detailed_choose_us": "<p><strong>\ud83d\ude80 Why Choose Us?</strong>&nbsp;<br>&nbsp;</p><ul><li>Photorealistic quality that impresses clients and stakeholders.<br>&nbsp;</li><li>Fast turnaround from plans to finished renders.<br>&nbsp;</li><li>Flexible revisions until your vision is perfectly captured.<br>&nbsp;</li><li>End-to-end support from concept sketches to final animations.</li></ul><p>&nbsp;</p>",
+      "detailed_banner_image": {
+        "path": "/images/2025-11/unnamed (1) (1)_0.png",
+        "alt": "3D architectural exterior visualization of a modern luxury villa"
+      },
+      "detailed_front_image": {
+        "path": "/images/2025-11/unnamed (2).png",
+        "alt": "3D architectural rendering of a modern apartment building"
+      },
+      "image2": {
+        "path": "/images/2025-11/unnamed (2).png",
+        "alt": "3D Architectural Design"
+      }
+    },
+    "get-a-quote": {
+      "id": "9",
+      "slug": "get-a-quote",
+      "title": "Contact us",
+      "type": "contact",
+      "url": "/get-a-quote",
+      "sections": [],
+      "body": "Transform your ideas into reality. Tell us about your project and receive a detailed proposal within 24 hours",
+      "contact_title": "Get Your Free Quote",
+      "contact_form_title": "Let's Get Connected ! ",
+      "contact_description": "<p>Fill out the form below and we'll get back to you with a detailed quote</p>",
+      "contact_list": "quick_turnaround"
+    },
+    "web-package": {
+      "id": "11",
+      "slug": "web-package",
+      "title": "Web Development Package",
+      "type": "landing_page",
+      "url": "/web-package",
+      "sections": [
+        {
+          "id": "13",
+          "type": "packages",
+          "title": "Choose Your Perfect Package",
+          "body": "<p>Scalable solutions designed to grow with your business. From startups to enterprises, we have the perfect package to transform your digital presence.</p>",
+          "bgImage": {
+            "path": "/images/2025-09/Generated Image September 10, 2025 - 12_16AM.png",
+            "alt": "Web Development Package"
+          }
+        },
+        {
+          "id": "17",
+          "type": "package_list",
+          "title": "Transparent Pricing, Exceptional Value",
+          "body": "<p>Choose the package that fits your needs. All plans include our commitment to excellence and ongoing support.</p>"
+        }
+      ]
+    },
+    "seo-packages": {
+      "id": "13",
+      "slug": "seo-packages",
+      "title": "SEO Packages",
+      "type": "landing_page",
+      "url": "/seo-packages",
+      "sections": [
+        {
+          "id": "25",
+          "type": "packages",
+          "title": "Choose Your Perfect Package",
+          "body": "<p>Scalable solutions designed to grow with your business. From startups to enterprises, we have the perfect package to transform your digital presence.</p>",
+          "bgImage": {
+            "path": "/images/2025-09/SEO package bg.webp",
+            "alt": "SEO package background"
+          }
+        },
+        {
+          "id": "30",
+          "type": "seo_wrapper_packages"
+        }
+      ]
+    }
+  },
+  "menus": {
+    "main": [
+      {
+        "title": "Company",
+        "url": "#",
+        "parent": "NULL",
+        "expanded": true
+      },
+      {
+        "title": "What We Do",
+        "url": "/services-grid",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "Blog",
+        "url": "/blog",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "Contact Us",
+        "url": "/get-a-quote",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "About us",
+        "url": "/#about-us",
+        "parent": "menu_link_content:5136671f-d244-4748-8755-51f33251832b",
+        "expanded": false
+      },
+      {
+        "title": "Leadership",
+        "url": "/leadership",
+        "parent": "menu_link_content:5136671f-d244-4748-8755-51f33251832b",
+        "expanded": false
+      },
+      {
+        "title": "Packages",
+        "url": "#",
+        "parent": "NULL",
+        "expanded": true
+      },
+      {
+        "title": "Web Development Package",
+        "url": "/web-package",
+        "parent": "menu_link_content:c178ef43-94a4-4511-9d92-3316dcb92b89",
+        "expanded": false
+      },
+      {
+        "title": "SEO Package",
+        "url": "/seo-packages",
+        "parent": "menu_link_content:c178ef43-94a4-4511-9d92-3316dcb92b89",
+        "expanded": false
+      }
+    ],
+    "footer": [
+      {
+        "title": "Home",
+        "url": "/",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "Services",
+        "url": "/services-grid",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "Leadership",
+        "url": "/leadership",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "Get a Quote",
+        "url": "/get-a-quote",
+        "parent": "NULL",
+        "expanded": false
+      }
+    ],
+    "services": [
+      {
+        "title": "Web Design",
+        "url": "/web-design",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "Web Development",
+        "url": "/web-development",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "Digital Marketing",
+        "url": "/digital-marketing",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "Digital Branding",
+        "url": "/digital-branding",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "Testing",
+        "url": "/ma-testing",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "IoT Solutions",
+        "url": "/iot",
+        "parent": "NULL",
+        "expanded": false
+      },
+      {
+        "title": "3D Architectural Design",
+        "url": "/3d-architectural-design",
+        "parent": "NULL",
+        "expanded": false
+      }
+    ]
+  },
+  "settings": {
+    "contactHeading": "Get in Touch !",
+    "contactPhone": "9597052557",
+    "contactEmail": "contact.triadtechsolutions@gmail.com",
+    "socialHeading": "Follow us on",
+    "tagline": "Build. Design. Market.",
+    "instagramLink": "https://www.instagram.com/",
+    "facebookLink": "https://www.facebook.com/",
+    "logoLink": "https://triadtechsolutions.in",
+    "footerLogo": "/images/tts-footer-logo.png"
+  },
+  "aliases": {
+    "8": "/iot",
+    "3": "/web-development",
+    "2": "/web-design",
+    "4": "/digital-marketing",
+    "5": "/digital-branding",
+    "6": "/ma-testing",
+    "10": "/leadership",
+    "9": "/get-a-quote",
+    "11": "/web-package",
+    "13": "/seo-packages",
+    "12": "/3d-architectural-design"
+  },
+  "services": [
+    {
+      "slug": "web-design",
+      "title": "Web Design",
+      "body": "<p>Our web design services focus on creating visually appealing, user-centric websites that not only look great but also provide exceptional user experiences. We combine creativity with functionality to deliver designs that convert visitors into customers.</p><p><br><strong>Key Capabilities</strong></p><ul><li>UI/UX Design:Intuitive user interfaces with seamless user experience flows</li><li>Responsive Design:Mobile-first approach ensuring perfect display across all devices</li><li>Prototyping:Interactive prototypes to visualize and test design concepts</li></ul>",
+      "image": {
+        "path": "/images/2025-09/Subtract.png",
+        "alt": "Web design"
+      },
+      "learnMoreUrl": "/web-design",
+      "quoteUrl": "/get-a-quote"
+    },
+    {
+      "slug": "web-development",
+      "title": "Web Development",
+      "body": "<p>Our development team creates high-performance, secure, and scalable web applications. From simple websites to complex enterprise solutions, we use the latest technologies and best practices to deliver exceptional results.</p><p><br><strong>Key Capabilities:</strong></p><ul><li>Frontend Development:Modern JavaScript frameworks for dynamic user interfaces</li><li>Backend Development:Robust server-side solutions and API development</li><li>Database Design:Efficient database architecture and optimization</li><li>API Integration:Seamless third-party service integrations</li></ul>",
+      "image": {
+        "path": "/images/2025-09/Web Development.png",
+        "alt": "Web Development"
+      },
+      "learnMoreUrl": "/web-development",
+      "quoteUrl": "/get-a-quote"
+    },
+    {
+      "slug": "digital-marketing",
+      "title": "Digital Marketing",
+      "body": "<p>Our digital marketing services help businesses establish a strong online presence, reach their target audience effectively, and drive measurable results. We create data-driven strategies that deliver real ROI.</p><p><br><strong>Key Capabilities:</strong></p><ul><li>SEO Optimization:Improve search engine rankings and organic traffic</li><li>Social Media Marketing:Engaging content and community management</li><li>Content Strategy:Compelling content that converts and engages</li><li>Analytics &amp; Reporting:Detailed performance tracking and insights</li></ul>",
+      "image": {
+        "path": "/images/2025-09/Digital Marketing.png",
+        "alt": "Digital Marketing Service"
+      },
+      "learnMoreUrl": "/digital-marketing",
+      "quoteUrl": "/get-a-quote"
+    },
+    {
+      "slug": "digital-branding",
+      "title": "Digital Branding",
+      "body": "<p>We help businesses create powerful brand identities that stand out in the digital marketplace. Our branding services encompass everything from logo design to comprehensive brand guidelines.</p><p><strong>Key Capabilities:</strong></p><ul><li>Logo Design:Memorable and versatile logo concepts</li><li>Brand Guidelines:Comprehensive style guides and usage rules</li><li>Visual Identity:Consistent visual elements across all touchpoints</li><li>Brand Strategy:Strategic positioning and messaging frameworks</li></ul>",
+      "image": {
+        "path": "/images/2025-09/Digital Branding.png",
+        "alt": "Digital Branding service"
+      },
+      "learnMoreUrl": "/digital-branding",
+      "quoteUrl": "/get-a-quote"
+    },
+    {
+      "slug": "ma-testing",
+      "title": "Automation Testing",
+      "body": "<p>Our automation testing services ensure your applications are reliable, secure, and perform optimally. We implement comprehensive testing strategies that catch issues before they reach your users.</p><p><strong>Key Capabilities:</strong></p><ul><li>Unit Testing:Individual component testing for code reliability</li><li>Integration Testing:System integration and API testing</li><li>Performance Testing:Load testing and performance optimization</li></ul>",
+      "image": {
+        "path": "/images/2025-09/Automation testing.png",
+        "alt": "Automation testing service"
+      },
+      "learnMoreUrl": "/ma-testing",
+      "quoteUrl": "/get-a-quote"
+    },
+    {
+      "slug": "manual-testing",
+      "title": "Manual Testing",
+      "body": "<p>Our manual testing services provide comprehensive quality assurance through human expertise and attention to detail. We ensure your applications work perfectly for real users by testing every aspect of functionality, usability, and performance from a human perspective.</p><p><strong>Key Capabilities:</strong></p><ul><li>Functional Testing:Comprehensive testing of all application features and workflows</li><li>Usability Testing:User experience evaluation and interface testing</li><li>Cross-Platform Testing:Testing across different browsers, devices, and operating systems</li><li>Exploratory Testing:Unscripted testing to discover unexpected issues and edge cases</li></ul>",
+      "image": {
+        "path": "/images/2025-09/manual testing 1.png",
+        "alt": "Manual testing service"
+      },
+      "learnMoreUrl": "/manual-testing",
+      "quoteUrl": "/get-a-quote"
+    },
+    {
+      "slug": "iot",
+      "title": "IoT Solutions",
+      "body": "<p>Our IoT solutions help businesses harness the power of connected devices to optimize operations, gather valuable insights, and create intelligent automated systems. From sensor networks to smart building management, we design and implement comprehensive IoT ecosystems tailored to your specific needs.</p><p><strong>Key Capabilities:</strong></p><ul><li>Device Connectivity:Seamless integration of sensors, actuators, and smart devices</li><li>Data Analytics:Real-time data processing and predictive analytics from IoT devices</li><li>Cloud Integration:Secure cloud-based IoT platforms with scalable infrastructure</li><li>Automation Systems:Intelligent automation workflows based on sensor data and triggers</li></ul>",
+      "image": {
+        "path": "/images/2025-09/IoT img.png",
+        "alt": "IOT service"
+      },
+      "learnMoreUrl": "/iot",
+      "quoteUrl": "/get-a-quote"
+    },
+    {
+      "slug": "3d-architectural-design",
+      "title": "3D Architectural Design",
+      "body": "<p>Our 3D architectural design services bring spaces to life before they are built. From residential homes to commercial projects, we create photorealistic visualizations that help clients, architects, and stakeholders see the final result with clarity and confidence.</p><p><strong>Key Capabilities:</strong></p><ul><li>Exterior &amp; Interior Visualization:Realistic 3D renders of buildings and spaces</li><li>Walkthrough Animations:Immersive virtual tours of unbuilt projects</li><li>Floor Plan to 3D Conversion:Transform 2D plans into detailed 3D models</li><li>Material &amp; Lighting Studies:Explore finishes, lighting, and ambiance before construction</li></ul>",
+      "image": {
+        "path": "/images/2025-11/unnamed (2).png",
+        "alt": "3D Architectural Design"
+      },
+      "learnMoreUrl": "/3d-architectural-design",
+      "quoteUrl": "/get-a-quote"
+    }
+  ]
+}

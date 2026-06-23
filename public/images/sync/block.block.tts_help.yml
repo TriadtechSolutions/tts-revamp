@@ -1,0 +1,22 @@
+uuid: 35ef4656-9c3a-4b83-a726-f0104c22cb7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - tts
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: tts_help
+theme: tts
+region: top_header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

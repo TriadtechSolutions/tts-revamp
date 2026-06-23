@@ -1,0 +1,20 @@
+uuid: 28ab228b-d290-4c9b-bcdf-e64f081a3112
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tts
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: tts_primary_admin_actions
+theme: tts
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

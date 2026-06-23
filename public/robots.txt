@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://triadtechsolutions.in/sitemap.xml

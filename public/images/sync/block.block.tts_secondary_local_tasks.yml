@@ -1,0 +1,22 @@
+uuid: 4e95fa08-3039-44db-a423-1b7b5c23ee5f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tts
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: tts_secondary_local_tasks
+theme: tts
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

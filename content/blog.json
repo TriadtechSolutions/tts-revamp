@@ -1,0 +1,37 @@
+{
+  "categories": [
+    { "name": "Digital Wellness", "slug": "digital-wellness" },
+    { "name": "Web Development", "slug": "web-development" },
+    { "name": "Digital Marketing", "slug": "digital-marketing" },
+    { "name": "Technology", "slug": "technology" }
+  ],
+  "posts": [
+    {
+      "slug": "scrolled-into-anxiety",
+      "title": "Scrolled into Anxiety: How Social Media Is Silently Draining Your Energy in 2026",
+      "summary": "You put the phone down. You feel fine. But somewhere between the dopamine spikes and the infinite feed, something got quietly stolen from you.",
+      "category": "Digital Wellness",
+      "categorySlug": "digital-wellness",
+      "author": "Triad Tech Solutions",
+      "readTime": "8 min read",
+      "published": "March 2026",
+      "tag": "Mental Health",
+      "template": "editorial",
+      "image": {
+        "path": "/images/2025-09/marketing.png",
+        "alt": "Social media and digital wellness"
+      },
+      "hero": {
+        "eyebrow": "Opinion & Analysis",
+        "titleHtml": "<em>Scrolled</em> into<br /><span class=\"underline-word\">Anxiety</span>:<br />How Social Media<br />Is Silently Draining<br />Your Energy in 2026",
+        "subtitle": "You put the phone down. You feel fine. But somewhere between the dopamine spikes and the infinite feed, something got quietly stolen from you."
+      },
+      "stats": [
+        { "value": "4.2", "suffix": "hrs", "description": "Average daily screen time on social platforms globally in 2026" },
+        { "value": "68", "suffix": "%", "description": "Of Gen Z report feeling drained after scrolling, even without realising it" },
+        { "value": "2.3", "suffix": "×", "description": "Higher anxiety rates among heavy social media users vs. low users" }
+      ],
+      "contentFile": "scrolled-into-anxiety.html"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+uuid: 9e183555-1907-4983-ac52-313af612025c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tts
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: tts_powered
+theme: tts
+region: top_header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
