@@ -16,8 +16,13 @@ export default function HeroSection({ section }: { section: Section }) {
       )}
       <div className="home-content">
         <h2 className="home-title">
-          <span className="home-title-line gradient-word">We Buckled Up to</span>
-          <span className="home-title-line gradient-word">Build. Design. Market.</span>
+          <span className="home-title-line">
+            <span className="home-title-text">We Buckled Up to </span>
+            <span className="home-title-accent">Build.</span>
+          </span>
+          <span className="home-title-line home-title-accent">
+            Design. Market.
+          </span>
         </h2>
         {section.button && (
           <div className="home-btn">

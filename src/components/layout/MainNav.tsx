@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import NavLink from "./NavLink";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getSiteData } from "@/lib/content";
 import type { MenuItem } from "@/lib/types";
 
@@ -14,16 +14,38 @@ interface NavItem {
 
 interface MainNavProps {
   onClose: () => void;
+  menuOpen?: boolean;
 }
 
 const DROPDOWN_CLOSE_DELAY_MS = 280;
 
-export default function MainNav({ onClose }: MainNavProps) {
+function useDesktopNav() {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 992px)");
+    const update = () => setIsDesktop(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+
+  return isDesktop;
+}
+
+export default function MainNav({ onClose, menuOpen = false }: MainNavProps) {
   const { menus } = getSiteData();
   const items = menus.main;
   const serviceItems = menus.services;
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isDesktop = useDesktopNav();
+
+  useEffect(() => {
+    if (!menuOpen) {
+      setOpenDropdown(null);
+    }
+  }, [menuOpen]);
 
   const whatWeDoChildren: MenuItem[] = serviceItems.filter(
     (item) => item.url !== "/manual-testing"
@@ -68,6 +90,9 @@ export default function MainNav({ onClose }: MainNavProps) {
   };
 
   const toggleDropdown = (title: string) => {
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
     setOpenDropdown((current) => (current === title ? null : title));
   };
 
@@ -79,46 +104,42 @@ export default function MainNav({ onClose }: MainNavProps) {
       className="block block-menu navigation menu--main"
     >
       <ul className="clearfix nav navbar-nav">
-        <li className="nav-item menu-close d-lg-none">
-          <button
-            className="close-menu-btn"
-            aria-label="Close menu"
-            type="button"
-            onClick={onClose}
-          >
-            ×
-          </button>
-        </li>
         {tree.map((item) => (
           <li
             key={item.title}
             className={`nav-item${item.children?.length ? " has-submenu" : ""}${
               openDropdown === item.title ? " open is-open" : ""
             }`}
-            onMouseEnter={() => item.children?.length && openDropdownMenu(item.title)}
-            onMouseLeave={() => item.children?.length && scheduleCloseDropdown()}
+            onMouseEnter={() =>
+              isDesktop && item.children?.length && openDropdownMenu(item.title)
+            }
+            onMouseLeave={() =>
+              isDesktop && item.children?.length && scheduleCloseDropdown()
+            }
           >
             {item.children?.length ? (
               <>
-                <span
+                <button
+                  type="button"
                   className="nav-link nav-link--parent"
-                  role="button"
-                  tabIndex={0}
-                  onClick={() => toggleDropdown(item.title)}
-                  onKeyDown={(event) => {
-                    if (event.key === "Enter" || event.key === " ") {
-                      event.preventDefault();
-                      toggleDropdown(item.title);
-                    }
+                  aria-expanded={openDropdown === item.title}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    toggleDropdown(item.title);
                   }}
                 >
                   {item.title}
-                  <span className="dropdown-arrow">▼</span>
-                </span>
+                  <span className="dropdown-arrow" aria-hidden="true">
+                    ▼
+                  </span>
+                </button>
                 <ul
                   className="submenu dropdown-menu glass-dropdown"
-                  onMouseEnter={() => openDropdownMenu(item.title)}
-                  onMouseLeave={scheduleCloseDropdown}
+                  onMouseEnter={() =>
+                    isDesktop && openDropdownMenu(item.title)
+                  }
+                  onMouseLeave={() => isDesktop && scheduleCloseDropdown()}
                 >
                   {item.children.map((child) => (
                     <li key={child.url} className="submenu-item">

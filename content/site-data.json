@@ -501,7 +501,7 @@
       "title": "Web Design",
       "body": "<p>Our web design services focus on creating visually appealing, user-centric websites that not only look great but also provide exceptional user experiences. We combine creativity with functionality to deliver designs that convert visitors into customers.</p><p><br><strong>Key Capabilities</strong></p><ul><li>UI/UX Design:Intuitive user interfaces with seamless user experience flows</li><li>Responsive Design:Mobile-first approach ensuring perfect display across all devices</li><li>Prototyping:Interactive prototypes to visualize and test design concepts</li></ul>",
       "image": {
-        "path": "/images/2025-09/Subtract.png",
+        "path": "/images/2025-08/Web design Service page.webp",
         "alt": "Web design"
       },
       "learnMoreUrl": "/web-design",
@@ -512,7 +512,7 @@
       "title": "Web Development",
       "body": "<p>Our development team creates high-performance, secure, and scalable web applications. From simple websites to complex enterprise solutions, we use the latest technologies and best practices to deliver exceptional results.</p><p><br><strong>Key Capabilities:</strong></p><ul><li>Frontend Development:Modern JavaScript frameworks for dynamic user interfaces</li><li>Backend Development:Robust server-side solutions and API development</li><li>Database Design:Efficient database architecture and optimization</li><li>API Integration:Seamless third-party service integrations</li></ul>",
       "image": {
-        "path": "/images/2025-09/Web Development.png",
+        "path": "/images/2025-08/Web Development serivce page.webp",
         "alt": "Web Development"
       },
       "learnMoreUrl": "/web-development",
@@ -523,7 +523,7 @@
       "title": "Digital Marketing",
       "body": "<p>Our digital marketing services help businesses establish a strong online presence, reach their target audience effectively, and drive measurable results. We create data-driven strategies that deliver real ROI.</p><p><br><strong>Key Capabilities:</strong></p><ul><li>SEO Optimization:Improve search engine rankings and organic traffic</li><li>Social Media Marketing:Engaging content and community management</li><li>Content Strategy:Compelling content that converts and engages</li><li>Analytics &amp; Reporting:Detailed performance tracking and insights</li></ul>",
       "image": {
-        "path": "/images/2025-09/Digital Marketing.png",
+        "path": "/images/2025-08/Digital Marketing service page.webp",
         "alt": "Digital Marketing Service"
       },
       "learnMoreUrl": "/digital-marketing",
@@ -534,7 +534,7 @@
       "title": "Digital Branding",
       "body": "<p>We help businesses create powerful brand identities that stand out in the digital marketplace. Our branding services encompass everything from logo design to comprehensive brand guidelines.</p><p><strong>Key Capabilities:</strong></p><ul><li>Logo Design:Memorable and versatile logo concepts</li><li>Brand Guidelines:Comprehensive style guides and usage rules</li><li>Visual Identity:Consistent visual elements across all touchpoints</li><li>Brand Strategy:Strategic positioning and messaging frameworks</li></ul>",
       "image": {
-        "path": "/images/2025-09/Digital Branding.png",
+        "path": "/images/2025-08/Digital Branding service page.webp",
         "alt": "Digital Branding service"
       },
       "learnMoreUrl": "/digital-branding",
@@ -545,21 +545,10 @@
       "title": "Automation Testing",
       "body": "<p>Our automation testing services ensure your applications are reliable, secure, and perform optimally. We implement comprehensive testing strategies that catch issues before they reach your users.</p><p><strong>Key Capabilities:</strong></p><ul><li>Unit Testing:Individual component testing for code reliability</li><li>Integration Testing:System integration and API testing</li><li>Performance Testing:Load testing and performance optimization</li></ul>",
       "image": {
-        "path": "/images/2025-09/Automation testing.png",
+        "path": "/images/2025-08/Automation testing service page.webp",
         "alt": "Automation testing service"
       },
       "learnMoreUrl": "/ma-testing",
-      "quoteUrl": "/get-a-quote"
-    },
-    {
-      "slug": "manual-testing",
-      "title": "Manual Testing",
-      "body": "<p>Our manual testing services provide comprehensive quality assurance through human expertise and attention to detail. We ensure your applications work perfectly for real users by testing every aspect of functionality, usability, and performance from a human perspective.</p><p><strong>Key Capabilities:</strong></p><ul><li>Functional Testing:Comprehensive testing of all application features and workflows</li><li>Usability Testing:User experience evaluation and interface testing</li><li>Cross-Platform Testing:Testing across different browsers, devices, and operating systems</li><li>Exploratory Testing:Unscripted testing to discover unexpected issues and edge cases</li></ul>",
-      "image": {
-        "path": "/images/2025-09/manual testing 1.png",
-        "alt": "Manual testing service"
-      },
-      "learnMoreUrl": "/manual-testing",
       "quoteUrl": "/get-a-quote"
     },
     {
@@ -567,7 +556,7 @@
       "title": "IoT Solutions",
       "body": "<p>Our IoT solutions help businesses harness the power of connected devices to optimize operations, gather valuable insights, and create intelligent automated systems. From sensor networks to smart building management, we design and implement comprehensive IoT ecosystems tailored to your specific needs.</p><p><strong>Key Capabilities:</strong></p><ul><li>Device Connectivity:Seamless integration of sensors, actuators, and smart devices</li><li>Data Analytics:Real-time data processing and predictive analytics from IoT devices</li><li>Cloud Integration:Secure cloud-based IoT platforms with scalable infrastructure</li><li>Automation Systems:Intelligent automation workflows based on sensor data and triggers</li></ul>",
       "image": {
-        "path": "/images/2025-09/IoT img.png",
+        "path": "/images/2025-08/Iot service page.webp",
         "alt": "IOT service"
       },
       "learnMoreUrl": "/iot",

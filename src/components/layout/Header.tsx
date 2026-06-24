@@ -27,22 +27,20 @@ export default function Header() {
             srcSet={`${LOGO} 1x, ${LOGO} 2x`}
             alt="Triadtech Solutions"
             className="site-logo"
-            width={260}
-            height={85}
+            width={180}
+            height={58}
           />
         </Link>
 
         <button
-          className="navbar-toggler d-lg-none"
+          className="navbar-toggler mobile-nav-toggle d-lg-none"
           type="button"
-          aria-label="Toggle navigation"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
         >
-          <span className="navbar-toggler-bars" aria-hidden="true">
-            <span className={`hamburger-line${menuOpen ? " open" : ""}`} />
-            <span className={`hamburger-line${menuOpen ? " open" : ""}`} />
-            <span className={`hamburger-line${menuOpen ? " open" : ""}`} />
+          <span className="mobile-nav-toggle-label">
+            {menuOpen ? "Close" : "Menu"}
           </span>
         </button>
 
@@ -59,7 +57,7 @@ export default function Header() {
           id="CollapsingNavbar"
           className={`navbar-collapse${menuOpen ? " show" : ""}`}
         >
-          <MainNav onClose={closeMenu} />
+          <MainNav onClose={closeMenu} menuOpen={menuOpen} />
         </div>
       </nav>
     </header>
