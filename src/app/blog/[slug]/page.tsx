@@ -7,7 +7,7 @@ import {
   getPostBySlug,
   getPostContent,
 } from "@/lib/blog";
-import "@/styles/blog-editorial.css";
+import { SITE_NAME } from "@/lib/seo";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   if (!post) return {};
 
   return {
-    title: `${post.title} | Triad Tech Solutions`,
+    title: `${post.title} | ${SITE_NAME}`,
     description: post.summary,
     openGraph: {
       title: post.title,

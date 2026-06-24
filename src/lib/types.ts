@@ -40,6 +40,7 @@ export interface Page {
   contact_form_title?: string;
   contact_description?: string;
   contact_list?: string;
+  metaDescription?: string;
 }
 
 export interface MenuItem {

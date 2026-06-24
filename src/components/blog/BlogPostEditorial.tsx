@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import type { BlogPost } from "@/lib/types";
+import { SITE_NAME } from "@/lib/seo";
 
 interface BlogPostEditorialProps {
   post: BlogPost;
@@ -34,7 +35,7 @@ export default function BlogPostEditorial({ post, contentHtml }: BlogPostEditori
 
         <nav className="top-bar">
           <Link href="/blog" className="brand">
-            Triad Tech Solutions &nbsp;·&nbsp; Blog
+            {SITE_NAME} &nbsp;·&nbsp; Blog
           </Link>
         </nav>
 

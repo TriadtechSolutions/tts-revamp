@@ -14,12 +14,22 @@ export default function sitemap() {
   const urls = [
     { url: SITE_URL, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 1 },
     ...pages
-      .filter((p) => p.slug !== "home")
+      .filter(
+        (p) =>
+          p.slug !== "home" &&
+          p.slug !== "ma-testing" &&
+          p.slug !== "manual-testing",
+      )
       .map((p) => ({
         url: `${SITE_URL}${p.url}`,
         lastModified: new Date(),
         changeFrequency: "monthly" as const,
-        priority: p.type === "contact" ? 0.9 : 0.8,
+        priority:
+          p.slug === "web-development" || p.slug === "digital-marketing"
+            ? 0.95
+            : p.type === "contact"
+              ? 0.9
+              : 0.8,
       })),
     { url: `${SITE_URL}/services-grid`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.9 },
     { url: `${SITE_URL}/blog`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.6 },

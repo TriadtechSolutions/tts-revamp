@@ -3,7 +3,8 @@
     "home": {
       "id": "1",
       "slug": "home",
-      "title": "Home Page",
+      "title": "Build. Design. Market.",
+      "metaDescription": "Triadtech Solutions delivers expert web development and digital marketing services. We build high-performing websites, design standout digital experiences, and help businesses grow online.",
       "type": "landing_page",
       "url": "/",
       "sections": [

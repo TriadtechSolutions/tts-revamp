@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BlogBanner, { BlogCategoryFilter } from "@/components/blog/BlogBanner";
 import BlogGrid from "@/components/blog/BlogGrid";
+import { SITE_NAME } from "@/lib/seo";
 import {
   getAllCategories,
   getAllCategorySlugs,
@@ -23,8 +24,8 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   if (!cat) return {};
 
   return {
-    title: `${cat.name} | Blog | Triad Tech Solutions`,
-    description: `Browse blog posts in ${cat.name} — insights and articles from Triad Tech Solutions.`,
+    title: `${cat.name} | Blog | ${SITE_NAME}`,
+    description: `Browse blog posts in ${cat.name} — insights and articles from ${SITE_NAME}.`,
   };
 }
 

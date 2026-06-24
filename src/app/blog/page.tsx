@@ -3,8 +3,10 @@ import BlogBanner, { BlogCategoryFilter } from "@/components/blog/BlogBanner";
 import BlogGrid from "@/components/blog/BlogGrid";
 import { getAllCategories, getAllPosts } from "@/lib/blog";
 
+import { SITE_NAME } from "@/lib/seo";
+
 export const metadata: Metadata = {
-  title: "Blog | Triad Tech Solutions",
+  title: `Blog | ${SITE_NAME}`,
   description:
     "Insights, tips, and updates on web development, digital marketing, technology trends, and digital wellness.",
 };
