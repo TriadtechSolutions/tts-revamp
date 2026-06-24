@@ -17,11 +17,14 @@ export default function HeroSection({ section }: { section: Section }) {
       <div className="home-content">
         <h2 className="home-title">
           <span className="home-title-line">
-            <span className="home-title-text">We Buckled Up to </span>
-            <span className="home-title-accent">Build.</span>
+            <span className="home-title-text">We Buckled </span>
+            <span className="gradient-word">Up</span>
+            <span className="home-title-text"> to </span>
+            <span className="gradient-word">Build.</span>
           </span>
-          <span className="home-title-line home-title-accent">
-            Design. Market.
+          <span className="home-title-line">
+            <span className="home-title-text">Design. </span>
+            <span className="gradient-word">Market.</span>
           </span>
         </h2>
         {section.button && (

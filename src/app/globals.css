@@ -289,6 +289,13 @@
   line-height: inherit;
 }
 
+@media (min-width: 992px) {
+  .home-title-line:nth-child(1),
+  .home-title-line:nth-child(2) {
+    display: inline;
+  }
+}
+
 .home-title-line.gradient-word {
   background: linear-gradient(to right, #000000, #6aaa4c);
   -webkit-background-clip: text;
@@ -583,7 +590,9 @@
 
   .about-us-section .about-front-image-wrapper {
     height: auto;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-us-section .about-front-image-wrapper img,
@@ -592,6 +601,8 @@
     max-width: 420px;
     height: auto;
     min-height: unset;
+    margin-left: auto !important;
+    margin-right: auto;
   }
 
   .about-us-section .about-body-content {
@@ -1433,15 +1444,36 @@ footer.site-footer .socialmedia_icons {
   }
 
   .home-bg {
-    object-position: center center;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .home-banner {
     margin-top: 0;
-    min-height: 70vh;
-    align-items: flex-start;
+    height: auto;
+    min-height: 60vh;
+    align-items: center;
     justify-content: center;
-    padding-top: clamp(2rem, 10vh, 4.5rem);
+    padding: 0;
+    background: #fff;
+  }
+
+  .home-banner::after {
+    content: "";
+    position: absolute;
+    top: 38%;
+    right: -8%;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(190, 198, 190, 0.14) 0%,
+      rgba(220, 225, 220, 0.06) 50%,
+      transparent 72%
+    );
+    filter: blur(32px);
+    z-index: 1;
+    pointer-events: none;
   }
 
   .home-content {
@@ -1453,18 +1485,35 @@ footer.site-footer .socialmedia_icons {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .home-title {
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(1.55rem, 7vw, 2.75rem);
     max-width: 100%;
     padding: 0 0.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-title-line:first-child {
+    white-space: nowrap;
+  }
+
+  .home-title-line .gradient-word {
+    display: inline;
+    background: linear-gradient(to right, #000000, #6aaa4c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: inherit;
   }
 
   .home-btn {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 2.75rem;
   }
 
   /* About — override legacy Drupal offsets */
@@ -1578,12 +1627,33 @@ footer.site-footer .socialmedia_icons {
   }
 
   .home-banner {
-    min-height: 62vh;
-    padding-top: clamp(1.5rem, 8vh, 3.5rem);
+    min-height: 72vh;
+    padding: 0;
+  }
+
+  .home-banner::after {
+    top: 42%;
+    width: 45%;
+    height: 45%;
+    filter: blur(36px);
+  }
+
+  .home-content {
+    padding-top: 0;
   }
 
   .home-title {
-    font-size: clamp(1.75rem, 9vw, 2.5rem);
+    font-size: clamp(1.45rem, 6.8vw, 2.25rem);
+    max-width: 100%;
+    margin-bottom: 1.75rem;
+  }
+
+  .home-title-line:first-child {
+    white-space: nowrap;
+  }
+
+  .home-btn {
+    margin-top: 2.25rem;
   }
 
   .home-btn a {
@@ -1599,6 +1669,43 @@ footer.site-footer .socialmedia_icons {
   .button-section {
     top: 0;
     margin-top: 1rem;
+  }
+
+  .about-us-section .about-body-content p {
+    font-size: 16px;
+    line-height: 2.1;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-us-section .about-body-content strong {
+    font-size: 18px;
+    line-height: 1.75;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-us-section .about-body-content ul li {
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-us-section .about-front-image-wrapper {
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-section .about-front-image-wrapper img,
+  .about-us-section .about-front-image {
+    width: 100% !important;
+    max-width: min(360px, 100%);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
   }
 }
 
