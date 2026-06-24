@@ -2,6 +2,19 @@
 
 import { FormEvent, useState } from "react";
 
+const WEB3FORMS_ACCESS_KEY =
+  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "";
+
+async function parseJsonResponse(response: Response) {
+  const contentType = response.headers.get("content-type") ?? "";
+
+  if (!contentType.includes("application/json")) {
+    throw new Error("Unable to send your message right now. Please try again later.");
+  }
+
+  return (await response.json()) as { success?: boolean; message?: string; error?: string };
+}
+
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -15,24 +28,38 @@ export default function ContactForm() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    if (!WEB3FORMS_ACCESS_KEY) {
+      setError("Email service is not configured yet.");
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      const response = await fetch("/api/contact", {
+      const name = String(formData.get("name") ?? "").trim();
+      const email = String(formData.get("email") ?? "").trim();
+      const phone = String(formData.get("phone") ?? "").trim();
+      const message = String(formData.get("message") ?? "").trim();
+
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({
-          name: formData.get("name"),
-          email: formData.get("email"),
-          phone: formData.get("phone"),
-          message: formData.get("message"),
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New website enquiry from ${name}`,
+          name,
+          email,
+          phone: phone || "Not provided",
+          message,
         }),
       });
 
-      const data = (await response.json()) as { error?: string };
+      const data = await parseJsonResponse(response);
 
-      if (!response.ok) {
-        throw new Error(data.error ?? "Failed to send your message.");
+      if (!response.ok || !data.success) {
+        throw new Error(data.message ?? data.error ?? "Failed to send your message.");
       }
 
       setSubmitted(true);

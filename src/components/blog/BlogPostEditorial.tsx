@@ -36,7 +36,6 @@ export default function BlogPostEditorial({ post, contentHtml }: BlogPostEditori
           <Link href="/blog" className="brand">
             Triad Tech Solutions &nbsp;·&nbsp; Blog
           </Link>
-          {post.tag && <span className="tag">{post.tag}</span>}
         </nav>
 
         <div className="hero-content">
