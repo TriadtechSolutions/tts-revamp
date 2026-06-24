@@ -527,6 +527,20 @@
   50% { opacity: 0.3; }
 }
 
+@media (max-width: 1023px) {
+  .blog-editorial {
+    margin-top: 0;
+  }
+
+  .blog-editorial .hero {
+    min-height: auto;
+  }
+
+  .blog-editorial .top-bar {
+    padding: 1rem 16px;
+  }
+}
+
 @media (max-width: 768px) {
   .blog-editorial .top-bar,
   .blog-editorial .hero-content,

@@ -145,7 +145,7 @@ export function ServiceDetail({ page }: { page: Page }) {
   const blocks2 = parseServiceBlocks(page.detailed_description2);
 
   return (
-    <article className="service-detail-page">
+    <article className={`service-detail-page service-detail-page--${page.slug}`}>
       <div className="service-detail-inner">
         <section className="service-hero-panel" aria-labelledby="service-title">
           <div className="service-hero-panel-inner">
