@@ -1,6 +1,7 @@
 @import "../styles/drupal-style.css";
 @import "../styles/blog.css";
 @import "swiper/css";
+@import "swiper/css/pagination";
 
 /* Brand palette — matched to live Triadtech site */
 :root {
@@ -12,6 +13,7 @@
   --tts-site-inset: 75px;
   --tts-about-align: 138px;
   --tts-section-pad: 24px;
+  --tts-footer-inset: 75px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -19,6 +21,7 @@
     --tts-site-inset: 32px;
     --tts-about-align: 32px;
     --tts-section-pad: 28px;
+    --tts-footer-inset: 36px;
   }
 }
 
@@ -27,6 +30,7 @@
     --tts-site-inset: 16px;
     --tts-about-align: 16px;
     --tts-section-pad: 16px;
+    --tts-footer-inset: 40px;
   }
 }
 
@@ -339,10 +343,10 @@
   top: -20px;
   right: 0;
   pointer-events: none;
-  display: block;
+  display: none;
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1024px) {
   #orb-root {
     display: block !important;
   }
@@ -421,6 +425,39 @@
   margin: 0;
   line-height: 1.5;
   font-size: 0.95rem;
+}
+
+.service-card {
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+@media (hover: hover) and (min-width: 1024px) {
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .service-card:hover,
+  .service-card:active {
+    transform: none !important;
+  }
+
+  .service-card:hover .services-image {
+    transform: none !important;
+  }
+
+  .service-grid .swiper,
+  .service-grid .service-swiper {
+    padding-top: 12px;
+    margin-top: -12px;
+    box-sizing: content-box;
+  }
+
+  .what-we-do-section .service-grid {
+    top: 0 !important;
+  }
 }
 
 /* ── About section (live Drupal layout) ── */
@@ -625,6 +662,74 @@
 }
 
 /* ── Testimonials ── */
+.testimonials-grid {
+  align-items: stretch;
+}
+
+.testimonials-grid > div {
+  display: flex;
+  min-height: 100%;
+}
+
+.testimonials-grid .testimonial-card {
+  flex: 1;
+  width: 100%;
+}
+
+.testimonial-card {
+  transition: transform 0.3s ease;
+}
+
+@media (hover: hover) and (min-width: 1024px) {
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .testimonial-card:hover,
+  .testimonial-card:active {
+    transform: none !important;
+  }
+
+  .testimonials-swiper {
+    padding-top: 12px;
+    margin-top: -12px;
+    box-sizing: content-box;
+  }
+}
+
+.testimonials-swiper {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 44px;
+}
+
+.testimonials-swiper .swiper-slide {
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.testimonials-swiper .testimonial-card {
+  flex: 1;
+  width: 100%;
+}
+
+.testimonials-swiper .swiper-pagination {
+  bottom: 0;
+}
+
+.testimonials-swiper .swiper-pagination-bullet {
+  background: #848484;
+  opacity: 0.5;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+  background: var(--tts-leaf);
+  opacity: 1;
+}
+
 .testimonial-content {
   font-size: inherit;
 }
@@ -642,7 +747,7 @@
 /* ── Footer (live site match) ── */
 footer.site-footer {
   background: linear-gradient(180deg, #3d3d3d 0%, #2a2a2a 45%, #1a1a1a 100%);
-  padding: 88px 20px 70px;
+  padding: 88px 0 70px;
   color: #ffffff;
 }
 
@@ -651,7 +756,8 @@ footer.site-footer .container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
+  padding-left: var(--tts-footer-inset);
+  padding-right: var(--tts-site-inset);
 }
 
 footer.site-footer .row {
@@ -670,7 +776,6 @@ footer.site-footer .row > [class*="col-"] {
 
 footer.site-footer .footer_first {
   min-width: 0;
-  margin-left: 12px;
 }
 
 footer.site-footer .footer-logo {
@@ -709,7 +814,7 @@ footer.site-footer .footer_fourth {
 }
 
 footer.site-footer .footer_fourth {
-  margin-left: -16px;
+  margin-left: 0;
 }
 
 footer.site-footer .footer_third h3,
@@ -787,12 +892,7 @@ footer.site-footer .socialmedia_icons {
 
 @media (max-width: 991px) {
   footer.site-footer {
-    padding: 64px 24px 52px;
-  }
-
-  footer.site-footer .footer_first,
-  footer.site-footer .footer_fourth {
-    margin-left: 0;
+    padding: 64px 0 52px;
   }
 
   footer.site-footer .row {
@@ -1186,8 +1286,8 @@ footer.site-footer .socialmedia_icons {
 
 @media (max-width: 991px) {
   :root {
-    --mobile-header-offset: max(20px, calc(env(safe-area-inset-top, 0px) + 12px));
-    --mobile-header-height: 52px;
+    --mobile-header-offset: max(28px, calc(env(safe-area-inset-top, 0px) + 16px));
+    --mobile-header-height: 56px;
   }
 
   #header {
@@ -1205,8 +1305,8 @@ footer.site-footer .socialmedia_icons {
     position: relative !important;
     top: 0 !important;
     border-bottom: none !important;
-    padding: 6px var(--tts-site-inset);
-    min-height: 52px;
+    padding: 10px var(--tts-site-inset);
+    min-height: 56px;
     flex-wrap: nowrap;
     align-items: center;
     overflow: visible;
@@ -1430,17 +1530,7 @@ footer.site-footer .socialmedia_icons {
   }
 
   #orb-root {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    top: 0;
-    right: 0;
-    margin-top: 1rem;
-  }
-
-  .orb-container canvas {
-    width: 100% !important;
-    height: 300px !important;
+    display: none !important;
   }
 
   .home-bg {
@@ -1552,22 +1642,34 @@ footer.site-footer .socialmedia_icons {
     max-width: 100%;
   }
 
-  .content-section p {
-    font-size: clamp(1.1rem, 4vw, 1.5rem);
+  .what-we-do-section .content-section p {
+    font-size: clamp(1.25rem, 4.5vw, 1.75rem);
+    line-height: 1.55;
   }
 
-  .title-section {
+  .what-we-do-section .title-section {
     min-height: auto;
     align-items: center;
   }
 
-  .title-section h2 {
+  .what-we-do-section .title-section h2,
+  .what-we-do-section .title-section h2 span {
     margin-right: 0;
     text-align: center;
-    font-size: clamp(2rem, 7vw, 2.5rem);
+    font-size: clamp(2.5rem, 9vw, 3.25rem);
+    line-height: 1.1;
   }
 
-  /* Testimonials — stack on mobile/tablet */
+  .what-we-do-section .service-grid {
+    top: 0 !important;
+    margin-top: 1.5rem;
+  }
+
+  .what-we-do-section .button-section {
+    top: 0 !important;
+  }
+
+  /* Testimonials — horizontal slider on mobile/tablet */
   .testimonials-section {
     width: 100%;
     padding-left: 0;
@@ -1580,10 +1682,13 @@ footer.site-footer .socialmedia_icons {
     padding-right: var(--tts-site-inset);
   }
 
-  .testimonials-grid {
-    grid-template-columns: 1fr !important;
-    max-width: 100% !important;
-    gap: 24px !important;
+  .testimonials-swiper {
+    max-width: 100%;
+  }
+
+  .testimonials-swiper .testimonial-card {
+    width: 100%;
+    min-height: 360px;
   }
 
   .testimonials-title {
@@ -1597,7 +1702,6 @@ footer.site-footer .socialmedia_icons {
 
   .testimonial-card {
     padding: 24px 20px;
-    min-height: unset;
   }
 
   .testimonial-content p {
@@ -1607,18 +1711,23 @@ footer.site-footer .socialmedia_icons {
 
   footer.site-footer,
   .site-footer {
-    padding: 48px var(--tts-site-inset) 40px !important;
+    padding: 48px 0 40px !important;
+  }
+
+  footer.site-footer .container {
+    padding-left: var(--tts-footer-inset) !important;
+    padding-right: var(--tts-site-inset) !important;
   }
 }
 
 @media (max-width: 767px) {
   :root {
-    --mobile-header-height: 48px;
+    --mobile-header-height: 52px;
   }
 
   #navbar-main {
-    padding: 5px var(--tts-site-inset);
-    min-height: 48px;
+    padding: 10px var(--tts-site-inset);
+    min-height: 52px;
   }
 
   #navbar-main .navbar-brand .site-logo,

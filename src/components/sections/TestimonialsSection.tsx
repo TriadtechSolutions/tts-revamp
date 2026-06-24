@@ -1,3 +1,4 @@
+import TestimonialsSlider from "@/components/sections/TestimonialsSlider";
 import type { Section } from "@/lib/types";
 
 export default function TestimonialsSection({ section }: { section: Section }) {
@@ -10,16 +11,9 @@ export default function TestimonialsSection({ section }: { section: Section }) {
             <p className="testimonials-subtitle">{section.subtitle}</p>
           )}
         </div>
-        <div className="testimonials-grid">
-          {section.testimonials?.map((t, i) => (
-            <div key={i} className="testimonial-card">
-              <div
-                className="testimonial-content"
-                dangerouslySetInnerHTML={{ __html: t.body }}
-              />
-            </div>
-          ))}
-        </div>
+        {section.testimonials && (
+          <TestimonialsSlider testimonials={section.testimonials} />
+        )}
       </div>
     </section>
   );
