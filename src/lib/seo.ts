@@ -17,10 +17,10 @@ export function buildMetadata(page: Page): Metadata {
 
   const description =
     page.metaDescription ??
-    (page.body && !page.body.startsWith("<")
+    ((page.body && !page.body.startsWith("<")
       ? page.body.slice(0, 160)
       : stripHtml(page.body || page.detailed_banner_text || "").slice(0, 160)) ||
-    (isHome ? HOME_DESCRIPTION : `${page.title} - ${SITE_NAME}`);
+      (isHome ? HOME_DESCRIPTION : `${page.title} - ${SITE_NAME}`));
 
   const url = `${SITE_URL}${page.url === "/" ? "" : page.url}`;
   const noindex = NOINDEX_SLUGS.has(page.slug);
